@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaSource.LogInController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="618.0" prefWidth="419.0" styleClass="">
+            <children>
+                <Button id="logIn" layoutX="136.0" layoutY="365.0" mnemonicParsing="false" onAction="#logInAction" prefHeight="31.0" prefWidth="53.0" text="登录" />
+                <Button id="signUp" layoutX="219.0" layoutY="365.0" mnemonicParsing="false" onAction="#signUpAction" prefHeight="31.0" prefWidth="53.0" text="注册" />
+                <TextField id="userName" layoutX="129.0" layoutY="248.0" prefHeight="23.0" prefWidth="161.0" />
+                <Text layoutX="129.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密码" wrappingWidth="63.0" />
+                <Text layoutX="129.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="账号" wrappingWidth="39.240234375" />
+                <PasswordField id="passWord" layoutX="129.0" layoutY="309.0" prefHeight="23.0" prefWidth="161.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
