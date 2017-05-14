@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaSource.AboutGameController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#acceptController" prefHeight="550.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaSource.AboutGameController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
   </columnConstraints>
@@ -17,17 +17,42 @@
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
-            <Text layoutX="100.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="象棋 V1.0 ">
+            <Text layoutX="50.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chess V1.0 ">
                <font>
-                  <Font size="41.0" />
+                  <Font size="44.0" />
                </font>
             </Text>
-            <Text layoutX="100.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Build on May 20,2017 ">
+            <Text layoutX="50.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Build on May 20,2017 ">
                <font>
                   <Font size="22.0" />
                </font>
             </Text>
-             <Text layoutX="100.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Powered by Narcissus ">
+             <Text layoutX="50.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JDK: 1.8.0_121">
+                 <font>
+                     <Font size="22.0" />
+                 </font>
+             </Text>
+             <Text layoutX="50.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JVM: HotSpot 64-Bit Server VM">
+                 <font>
+                     <Font size="22.0" />
+                 </font>
+             </Text>
+             <Text layoutX="50.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GitHub: NarcissusNull/Chess">
+                 <font>
+                     <Font size="22.0" />
+                 </font>
+             </Text>
+             <Text layoutX="50.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Created by Narcissus Null">
+                 <font>
+                     <Font size="22.0" />
+                 </font>
+             </Text>
+             <Text layoutX="50.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Powered by open-source software">
+                 <font>
+                     <Font size="22.0" />
+                 </font>
+             </Text>
+             <Text layoutX="50.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Open source License: GPL V2.0">
                  <font>
                      <Font size="22.0" />
                  </font>
