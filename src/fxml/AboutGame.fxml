@@ -17,17 +17,17 @@
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
-            <Text layoutX="100.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="象棋 V1.0">
+            <Text layoutX="100.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="象棋 V1.0 ">
                <font>
                   <Font size="41.0" />
                </font>
             </Text>
-            <Text layoutX="100.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Build on May 20,2017">
+            <Text layoutX="100.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Build on May 20,2017 ">
                <font>
                   <Font size="22.0" />
                </font>
             </Text>
-             <Text layoutX="100.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Powered by Narcissus">
+             <Text layoutX="100.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Powered by Narcissus ">
                  <font>
                      <Font size="22.0" />
                  </font>
