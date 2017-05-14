@@ -11,7 +11,7 @@ public class AboutGameController {
     }
 
     public void acceptController(MouseEvent event) throws Exception{
-        //单击退出关于窗口
+        //退出关于窗口处理机
         HomePage.aboutGameStage.hide();
         HomePage.mainStage.show();
     }
