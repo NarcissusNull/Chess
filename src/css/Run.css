@@ -1,4 +1,55 @@
-Button{
-    -fx-background-image:url("../img/heijiang.png");
+.heijiang{
+    -fx-background-image: url("../img/heijiang.png");
 }
 
+.heishi{
+    -fx-background-image:url("../img/heishi.png");
+}
+
+.heixiang{
+    -fx-background-image: url("../img/heixiang.png");
+}
+
+.heiju{
+    -fx-background-image: url("../img/heiju.png");
+}
+
+.heima{
+    -fx-background-image: url("../img/heima.png");
+}
+
+.heipao{
+    -fx-background-image: url("../img/heipao.png");
+}
+
+.heizu{
+    -fx-background-image: url("../img/heiju.png");
+}
+
+.hongshuai{
+    -fx-background-image: url("../img/hongshuai.png");
+}
+
+.hongshi{
+    -fx-background-image: url("../img/hongshi.png");
+}
+
+.hongxiang{
+    -fx-background-image: url("../img/hongxiang.png");
+}
+
+.hongju{
+    -fx-background-image: url("../img/hongju.png");
+}
+
+.hongma{
+    -fx-background-image: url("../img/hongma.png");
+}
+
+.hongpao{
+    -fx-background-image: url("../img/hongpao.png");
+}
+
+.hongbing{
+    -fx-background-image: url("../img/hongbing.png");
+}
