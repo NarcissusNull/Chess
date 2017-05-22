@@ -23,7 +23,7 @@
 }
 
 .heizu{
-    -fx-background-image: url("../img/heiju.png");
+    -fx-background-image: url("../img/heizu.png");
 }
 
 .hongshuai{
@@ -52,4 +52,12 @@
 
 .hongbing{
     -fx-background-image: url("../img/hongbing.png");
+}
+
+.anniu{
+    -fx-background-image: url("../img/anniu1.png");
+}
+
+.next{
+    -fx-background-image: url("../img/keyidong.png");
 }

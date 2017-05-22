@@ -16,6 +16,7 @@ public class ReadyController {
     public void beginGameAction(ActionEvent event) throws Exception{
        //“开始”按钮处理机
         HomePage.readyStage.hide();
+        runType.initAll();
         HomePage.runStage.show();
     }
 

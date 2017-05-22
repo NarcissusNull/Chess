@@ -4,37 +4,38 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaSource.RunController">
-  <columnConstraints>
-      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-  </columnConstraints>
-  <rowConstraints>
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-  </rowConstraints>
-   <children>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+<!--<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaSource.RunController">-->
+<!--<columnConstraints>-->
+<!--<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--</columnConstraints>-->
+<!--<rowConstraints>-->
+<!--<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--</rowConstraints>-->
+<!--<children>-->
+<!--</children>-->
+<!--</GridPane>-->
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaSource.RunController">
          <children>
 
-            <ImageView id="qipan" fitHeight="550.0" fitWidth="500.0" layoutX="150.0" layoutY="50.0" opacity="0.74" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="qipan" fitHeight="550.0" fitWidth="500.0" layoutX="150.0" layoutY="50.0" opacity="0.74" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/qipan.jpg" />
                </image>
             </ImageView>
-            <Button id="beginGame" layoutX="175.0" layoutY="650.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="开始" textAlignment="CENTER" textFill="#3cbf38">
+            <Button fx:id="beginGame" layoutX="175.0" layoutY="650.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" styleClass="anniu" text="开始" textAlignment="CENTER" textFill="#3cbf38">
                <font>
                   <Font name="Microsoft YaHei" size="12.0" />
-               </font></Button>
-            <Button id="withdraw" layoutX="275.0" layoutY="650.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="悔棋" textFill="#3cbf38" />
-            <Button id="Stalemate" layoutX="375.0" layoutY="650.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="求和" textFill="#3cbf38" />
-            <Button id="giveUp" layoutX="475.0" layoutY="650.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="认输" textFill="#3cbf38" />
-            <Button id="record" layoutX="575.0" layoutY="650.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="打谱" textFill="#3cbf38" />
+               </font>
+            </Button>
+            <Button fx:id="withdraw" layoutX="275.0" layoutY="650.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" styleClass="anniu" text="悔棋" textFill="#3cbf38" />
+            <Button fx:id="Stalemate" layoutX="375.0" layoutY="650.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" styleClass="anniu" text="求和" textFill="#3cbf38" />
+            <Button fx:id="giveUp" layoutX="475.0" layoutY="650.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" styleClass="anniu" text="认输" textFill="#3cbf38" />
+            <Button fx:id="record" layoutX="575.0" layoutY="650.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" styleClass="anniu" text="打谱" textFill="#3cbf38" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="460.0" layoutX="195.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="410.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="450.0" layoutX="200.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
             <Line endX="400.0" layoutX="200.0" layoutY="150.0" startX="0" />
@@ -187,45 +188,78 @@
             <Line endX="295.0" endY="415" startX="295.0" startY="405" strokeWidth="2.0" />
 
 
-            <Button styleClass="heizu" layoutX="177.0" layoutY="227.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="heizu" layoutX="277.0" layoutY="227.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="heizu" layoutX="377.0" layoutY="227.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="heizu" layoutX="477.0" layoutY="227.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="heizu" layoutX="577.0" layoutY="227.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="677.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/xiaoqipan.png" />
+               </image>
+            </ImageView>
 
-            <Button styleClass="heipao" layoutX="227.0" layoutY="177.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="heipao" layoutX="527.0" layoutY="177.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="677.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/xiaoqipan.png" />
+               </image>
+            </ImageView>
 
-            <Button styleClass="heiju" layoutX="177.0" layoutY="77.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="heima" layoutX="227.0" layoutY="77.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="heixiang" layoutX="277.0" layoutY="77.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="heishi" layoutX="327.0" layoutY="77.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="heijiang" layoutX="377.0" layoutY="77.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="heishi" layoutX="427.0" layoutY="77.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="heixiang" layoutX="477.0" layoutY="77.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="heima" layoutX="527.0" layoutY="77.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="heiju" layoutX="577.0" layoutY="77.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
+            <Button fx:id="heizu1" layoutX="177.0" layoutY="227.0" mnemonicParsing="false" onAction="#heizu1Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="heizu" textFill="#8c343400" />
+            <Button fx:id="heizu2" layoutX="277.0" layoutY="227.0" mnemonicParsing="false" onAction="#heizu2Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="heizu" textFill="#8c343400" />
+            <Button fx:id="heizu3" layoutX="377.0" layoutY="227.0" mnemonicParsing="false" onAction="#heizu3Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="heizu" textFill="#8c343400" />
+            <Button fx:id="heizu4" layoutX="477.0" layoutY="227.0" mnemonicParsing="false" onAction="#heizu4Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="heizu" textFill="#8c343400" />
+            <Button fx:id="heizu5" layoutX="577.0" layoutY="227.0" mnemonicParsing="false" onAction="#heizu5Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="heizu" textFill="#8c343400" />
 
-            <Button styleClass="hongbing" layoutX="177.0" layoutY="377.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="hongbing" layoutX="277.0" layoutY="377.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="hongbing" layoutX="377.0" layoutY="377.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="hongbing" layoutX="477.0" layoutY="377.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="hongbing" layoutX="577.0" layoutY="377.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
+            <Button fx:id="heipao1" layoutX="227.0" layoutY="177.0" mnemonicParsing="false" onAction="#heipao1Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="heipao" textFill="#8c343400" />
+            <Button fx:id="heipao2" layoutX="527.0" layoutY="177.0" mnemonicParsing="false" onAction="#heipao2Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="heipao" textFill="#8c343400" />
 
-            <Button styleClass="hongpao" layoutX="227.0" layoutY="427.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="hongpao" layoutX="527.0" layoutY="427.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
+            <Button fx:id="heiju1" layoutX="177.0" layoutY="77.0" mnemonicParsing="false" onAction="#heiju1Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="heiju" textFill="#8c343400" />
+            <Button fx:id="heima1" layoutX="227.0" layoutY="77.0" mnemonicParsing="false" onAction="#heima1Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="heima" textFill="#8c343400" />
+            <Button fx:id="heixiang1" layoutX="277.0" layoutY="77.0" mnemonicParsing="false" onAction="#heixiang1Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="heixiang" textFill="#8c343400" />
+            <Button fx:id="heishi1" layoutX="327.0" layoutY="77.0" mnemonicParsing="false" onAction="#heishi1Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="heishi" textFill="#8c343400" />
+            <Button fx:id="heijiang" layoutX="377.0" layoutY="77.0" mnemonicParsing="false" onAction="#heijiangController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="heijiang" textFill="#8c343400" />
+            <Button fx:id="heishi2" layoutX="427.0" layoutY="77.0" mnemonicParsing="false" onAction="#heishi2Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="heishi" textFill="#8c343400" />
+            <Button fx:id="heixiang2" layoutX="477.0" layoutY="77.0" mnemonicParsing="false" onAction="#heixiang2Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="heixiang" textFill="#8c343400" />
+            <Button fx:id="heima2" layoutX="527.0" layoutY="77.0" mnemonicParsing="false" onAction="#heima2Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="heima" textFill="#8c343400" />
+            <Button fx:id="heiju2" layoutX="577.0" layoutY="77.0" mnemonicParsing="false" onAction="#heiju2Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="heiju" textFill="#8c343400" />
 
-            <Button styleClass="hongju" layoutX="177.0" layoutY="527.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="hongma" layoutX="227.0" layoutY="527.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="hongxiang" layoutX="277.0" layoutY="527.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="hongshi" layoutX="327.0" layoutY="527.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="hongshuai" layoutX="377.0" layoutY="527.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="hongshi" layoutX="427.0" layoutY="527.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="hongxiang" layoutX="477.0" layoutY="527.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="hongma" layoutX="527.0" layoutY="527.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
-            <Button styleClass="hongju" layoutX="577.0" layoutY="527.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" textFill="#8c343400" />
+            <Button fx:id="hongbing1" layoutX="177.0" layoutY="377.0" mnemonicParsing="false" onAction="#hongbing1Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="hongbing" textFill="#8c343400" />
+            <Button fx:id="hongbing2" layoutX="277.0" layoutY="377.0" mnemonicParsing="false" onAction="#hongbing2Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="hongbing" textFill="#8c343400" />
+            <Button fx:id="hongbing3" layoutX="377.0" layoutY="377.0" mnemonicParsing="false" onAction="#hongbing3Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="hongbing" textFill="#8c343400" />
+            <Button fx:id="hongbing4" layoutX="477.0" layoutY="377.0" mnemonicParsing="false" onAction="#hongbing4Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="hongbing" textFill="#8c343400" />
+            <Button fx:id="hongbing5" layoutX="577.0" layoutY="377.0" mnemonicParsing="false" onAction="#hongbing5Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="hongbing" textFill="#8c343400" />
 
+            <Button fx:id="hongpao1" layoutX="227.0" layoutY="427.0" mnemonicParsing="false" onAction="#hongpao1Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="hongpao" textFill="#8c343400" />
+            <Button fx:id="hongpao2" layoutX="527.0" layoutY="427.0" mnemonicParsing="false" onAction="#hongpao2Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="hongpao" textFill="#8c343400" />
+
+            <Button fx:id="hongju1" layoutX="177.0" layoutY="527.0" mnemonicParsing="false" onAction="#hongju1Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="hongju" textFill="#8c343400" />
+            <Button fx:id="hongma1" layoutX="227.0" layoutY="527.0" mnemonicParsing="false" onAction="#hongma1Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="hongma" textFill="#8c343400" />
+            <Button fx:id="hongxiang1" layoutX="277.0" layoutY="527.0" mnemonicParsing="false" onAction="#hongxiang1Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="hongxiang" textFill="#8c343400" />
+            <Button fx:id="hongshi1" layoutX="327.0" layoutY="527.0" mnemonicParsing="false" onAction="#hongshi1Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="hongshi" textFill="#8c343400" />
+            <Button fx:id="hongshuai" layoutX="377.0" layoutY="527.0" mnemonicParsing="false" onAction="#hongshuaiController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="hongshuai" textFill="#8c343400" />
+            <Button fx:id="hongshi2" layoutX="427.0" layoutY="527.0" mnemonicParsing="false" onAction="#hongshi2Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="hongshi" textFill="#8c343400" />
+            <Button fx:id="hongxiang2" layoutX="477.0" layoutY="527.0" mnemonicParsing="false" onAction="#hongxiang2Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="hongxiang" textFill="#8c343400" />
+            <Button fx:id="hongma2" layoutX="527.0" layoutY="527.0" mnemonicParsing="false" onAction="#hongma2Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="hongma" textFill="#8c343400" />
+            <Button fx:id="hongju2" layoutX="577.0" layoutY="527.0" mnemonicParsing="false" onAction="#hongju2Controller" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="hongju" textFill="#8c343400" />
+
+            <Button fx:id="next0" layoutX="677" layoutY="277" mnemonicParsing="false" onAction="#nextController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="next" textFill="#8c343400" />
+            <Button fx:id="next1" layoutX="677" layoutY="277" mnemonicParsing="false" onAction="#nextController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="next" textFill="#8c343400" />
+            <Button fx:id="next2" layoutX="677" layoutY="277" mnemonicParsing="false" onAction="#nextController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="next" textFill="#8c343400" />
+            <Button fx:id="next3" layoutX="677" layoutY="277" mnemonicParsing="false" onAction="#nextController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="next" textFill="#8c343400" />
+            <Button fx:id="next4" layoutX="677" layoutY="277" mnemonicParsing="false" onAction="#nextController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="next" textFill="#8c343400" />
+            <Button fx:id="next5" layoutX="677" layoutY="277" mnemonicParsing="false" onAction="#nextController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="next" textFill="#8c343400" />
+            <Button fx:id="next6" layoutX="677" layoutY="277" mnemonicParsing="false" onAction="#nextController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="next" textFill="#8c343400" />
+            <Button fx:id="next7" layoutX="677" layoutY="277" mnemonicParsing="false" onAction="#nextController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="next" textFill="#8c343400" />
+            <Button fx:id="next8" layoutX="677" layoutY="277" mnemonicParsing="false" onAction="#nextController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="next" textFill="#8c343400" />
+            <Button fx:id="next9" layoutX="677" layoutY="277" mnemonicParsing="false" onAction="#nextController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="next" textFill="#8c343400" />
+            <Button fx:id="next10" layoutX="677" layoutY="277" mnemonicParsing="false" onAction="#nextController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="next" textFill="#8c343400" />
+            <Button fx:id="next11" layoutX="677" layoutY="277" mnemonicParsing="false" onAction="#nextController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="next" textFill="#8c343400" />
+            <Button fx:id="next12" layoutX="677" layoutY="277" mnemonicParsing="false" onAction="#nextController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="next" textFill="#8c343400" />
+            <Button fx:id="next13" layoutX="677" layoutY="277" mnemonicParsing="false" onAction="#nextController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="next" textFill="#8c343400" />
+            <Button fx:id="next14" layoutX="677" layoutY="277" mnemonicParsing="false" onAction="#nextController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="next" textFill="#8c343400" />
+            <Button fx:id="next15" layoutX="677" layoutY="277" mnemonicParsing="false" onAction="#nextController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="next" textFill="#8c343400" />
+            <Button fx:id="next16" layoutX="677" layoutY="277" mnemonicParsing="false" onAction="#nextController" prefHeight="46.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="next" textFill="#8c343400" />
+
+            <ImageView fitHeight="100.0" fitWidth="200.0" layoutX="677.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/xiaoqipan2.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
-   </children>
-</GridPane>

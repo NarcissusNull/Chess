@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -48,7 +49,7 @@ public class HomePage extends Application {
     public static void stageLoad(Stage stage,String fxml,String css) throws Exception{
        //窗口加载方法
 
-        Parent root = new FXMLLoader().load(HomePage.class.getResource(fxml));
+        Pane root = new FXMLLoader().load(HomePage.class.getResource(fxml));
         Scene scene = new Scene(root);
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
