@@ -11,7 +11,6 @@ public class chessManZu extends chessMan{
 
     @Override
     public Queue<Double> getNext(){
-        //TODO
         Queue<Double> queue = new LinkedList<>();
         int Y = (int) (x-177)/50;
         int X = (int) (y-77)/50;

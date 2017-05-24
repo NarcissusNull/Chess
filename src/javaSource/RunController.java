@@ -14,9 +14,8 @@ import java.util.ResourceBundle;
 
 public class RunController implements Initializable {
 
-    public volatile double xx;
-    public volatile double yy;
     private Button currentChessMan;
+    //当前选中的棋子
     @FXML
     private ImageView qipan;
     @FXML
@@ -135,8 +134,8 @@ public class RunController implements Initializable {
 
     public void heizu1Controller( ActionEvent event)throws Exception {
         //“黑卒1”按钮处理机
-//        if(runType.currentChessMan == 0||runType.currentChessMan > 100)
-//            return;
+        if(runType.currentType%2==0)
+            return;
         initNext();
         currentChessMan = heizu1;
         runType.currentChessMan = 71;
@@ -156,6 +155,8 @@ public class RunController implements Initializable {
 
     public void heizu2Controller( ActionEvent event)throws Exception {
         //“黑卒2”按钮处理机
+        if(runType.currentType%2==0)
+            return;
         initNext();
         currentChessMan = heizu2;
         runType.currentChessMan = 72;
@@ -175,6 +176,8 @@ public class RunController implements Initializable {
 
     public void heizu3Controller( ActionEvent event)throws Exception {
         //“黑卒3”按钮处理机
+        if(runType.currentType%2==0)
+            return;
         initNext();
         currentChessMan = heizu3;
         runType.currentChessMan = 73;
@@ -194,6 +197,8 @@ public class RunController implements Initializable {
 
     public void heizu4Controller( ActionEvent event)throws Exception {
         //“黑卒4”按钮处理机
+        if(runType.currentType%2==0)
+            return;
         initNext();
         currentChessMan = heizu4;
         runType.currentChessMan = 74;
@@ -213,6 +218,8 @@ public class RunController implements Initializable {
 
     public void heizu5Controller( ActionEvent event)throws Exception {
         //“黑卒5”按钮处理机
+        if(runType.currentType%2==0)
+            return;
         initNext();
         currentChessMan = heizu5;
         runType.currentChessMan = 75;
@@ -232,6 +239,8 @@ public class RunController implements Initializable {
 
     public void heiju1Controller(ActionEvent event) throws Exception{
         //“黑车1”按钮处理机
+        if(runType.currentType%2==0)
+            return;
         initNext();
         currentChessMan = heiju1;
         runType.currentChessMan = 41;
@@ -240,8 +249,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(heiju1,0);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    juController(heiju1,0);
+                    //为车统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -251,6 +260,8 @@ public class RunController implements Initializable {
 
     public void heiju2Controller(ActionEvent event) throws Exception{
         //“黑车2”按钮处理机
+        if(runType.currentType%2==0)
+            return;
         initNext();
         currentChessMan = heiju2;
         runType.currentChessMan = 42;
@@ -259,8 +270,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(heiju2,0);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    juController(heiju2,0);
+                    //为车统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -270,6 +281,8 @@ public class RunController implements Initializable {
 
     public void heima1Controller(ActionEvent event) throws Exception{
         //“黑馬1”按钮处理机
+        if(runType.currentType%2==0)
+            return;
         initNext();
         currentChessMan = heima1;
         runType.currentChessMan = 51;
@@ -278,8 +291,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(heima1,0);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    maController(heima1,0);
+                    //为馬统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -289,6 +302,8 @@ public class RunController implements Initializable {
 
     public void heima2Controller(ActionEvent event) throws Exception{
         //“黑馬2”按钮处理机
+        if(runType.currentType%2==0)
+            return;
         initNext();
         currentChessMan = heima2;
         runType.currentChessMan = 52;
@@ -297,8 +312,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(heima2,0);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    maController(heima2,0);
+                    //为馬统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -308,6 +323,8 @@ public class RunController implements Initializable {
 
     public void heipao1Controller(ActionEvent event) throws Exception {
         //“黑炮1”按钮处理机
+        if(runType.currentType%2==0)
+            return;
         initNext();
         currentChessMan = heipao1;
         runType.currentChessMan = 61;
@@ -316,8 +333,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(heipao1,0);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    paoController(heipao1,0);
+                    //为炮统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -327,6 +344,8 @@ public class RunController implements Initializable {
 
     public void heipao2Controller(ActionEvent event) throws Exception{
         //“黑炮2”按钮处理机
+        if(runType.currentType%2==0)
+            return;
         initNext();
         currentChessMan = heipao2;
         runType.currentChessMan = 62;
@@ -335,8 +354,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(heipao2,0);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    paoController(heipao2,0);
+                    //为炮统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -346,6 +365,8 @@ public class RunController implements Initializable {
 
     public void heijiangController(ActionEvent event) throws Exception{
         //“黑将” 按钮处理机
+        if(runType.currentType%2==0)
+            return;
         initNext();
         currentChessMan = heijiang;
         runType.currentChessMan = 11;
@@ -354,8 +375,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(heijiang,0);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    jiangController(heijiang,0);
+                    //为将帅统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -365,6 +386,8 @@ public class RunController implements Initializable {
 
     public void heishi1Controller(ActionEvent event) throws Exception{
         //“黑士1”按钮处理机
+        if(runType.currentType%2==0)
+            return;
         initNext();
         currentChessMan = heishi1;
         runType.currentChessMan = 21;
@@ -373,8 +396,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(heishi1,0);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    shiController(heishi1,0);
+                    //为士统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -384,6 +407,8 @@ public class RunController implements Initializable {
 
     public void heishi2Controller(ActionEvent event) throws Exception{
         //“黑士2”按钮处理机
+        if(runType.currentType%2==0)
+            return;
         initNext();
         currentChessMan = heishi2;
         runType.currentChessMan = 22;
@@ -392,8 +417,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(heishi2,0);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    shiController(heishi2,0);
+                    //为士统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -403,6 +428,8 @@ public class RunController implements Initializable {
 
     public void heixiang1Controller(ActionEvent event) throws Exception{
         //“黑象1”按钮处理机
+        if(runType.currentType%2==0)
+            return;
         initNext();
         currentChessMan = heixiang1;
         runType.currentChessMan = 31;
@@ -411,8 +438,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(heixiang1,0);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    xiangController(heixiang1,0);
+                    //为象统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -422,6 +449,8 @@ public class RunController implements Initializable {
 
     public void heixiang2Controller(ActionEvent event) throws Exception{
         //“黑象2”按钮处理机
+        if(runType.currentType%2==0)
+            return;
         initNext();
         currentChessMan = heixiang2;
         runType.currentChessMan = 32;
@@ -430,8 +459,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(heixiang2,0);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    xiangController(heixiang2,0);
+                    //为象统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -442,6 +471,8 @@ public class RunController implements Initializable {
 
     public void hongbing1Controller( ActionEvent event)throws Exception {
         //“红兵1”按钮处理机
+        if(runType.currentType%2==1)
+            return;
         initNext();
         currentChessMan = hongbing1;
         runType.currentChessMan = 171;
@@ -461,6 +492,8 @@ public class RunController implements Initializable {
 
     public void hongbing2Controller( ActionEvent event)throws Exception {
         //“红兵2”按钮处理机
+        if(runType.currentType%2==1)
+            return;
         initNext();
         currentChessMan = hongbing2;
         runType.currentChessMan = 172;
@@ -480,6 +513,8 @@ public class RunController implements Initializable {
 
     public void hongbing3Controller( ActionEvent event)throws Exception {
         //“红兵3”按钮处理机
+        if(runType.currentType%2==1)
+            return;
         initNext();
         currentChessMan = hongbing3;
         runType.currentChessMan = 173;
@@ -499,6 +534,8 @@ public class RunController implements Initializable {
 
     public void hongbing4Controller( ActionEvent event)throws Exception {
         //“红兵4”按钮处理机
+        if(runType.currentType%2==1)
+            return;
         initNext();
         currentChessMan = hongbing4;
         runType.currentChessMan = 174;
@@ -518,6 +555,8 @@ public class RunController implements Initializable {
 
     public void hongbing5Controller( ActionEvent event)throws Exception {
         //“红兵5”按钮处理机
+        if(runType.currentType%2==1)
+            return;
         initNext();
         currentChessMan = hongbing5;
         runType.currentChessMan = 175;
@@ -537,6 +576,8 @@ public class RunController implements Initializable {
 
     public void hongju1Controller(ActionEvent event) throws Exception{
         //“红车1”按钮处理机
+        if(runType.currentType%2==1)
+            return;
         initNext();
         currentChessMan = hongju1;
         runType.currentChessMan = 141;
@@ -545,8 +586,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(hongju1,1);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    juController(hongju1,1);
+                    //为车统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -556,6 +597,8 @@ public class RunController implements Initializable {
 
     public void hongju2Controller(ActionEvent event) throws Exception{
         //“红车2”按钮处理机
+        if(runType.currentType%2==1)
+            return;
         initNext();
         currentChessMan = hongju2;
         runType.currentChessMan = 142;
@@ -564,8 +607,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(hongju2,1);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    juController(hongju2,1);
+                    //为车统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -575,6 +618,8 @@ public class RunController implements Initializable {
 
     public void hongma1Controller(ActionEvent event) throws Exception{
         //“红馬1”按钮处理机
+        if(runType.currentType%2==1)
+            return;
         initNext();
         currentChessMan = hongma1;
         runType.currentChessMan = 151;
@@ -583,8 +628,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(hongma1,1);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    maController(hongma1,1);
+                    //为馬统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -594,6 +639,8 @@ public class RunController implements Initializable {
 
     public void hongma2Controller(ActionEvent event) throws Exception{
         //“红馬2”按钮处理机
+        if(runType.currentType%2==1)
+            return;
         initNext();
         currentChessMan = hongma2;
         runType.currentChessMan = 152;
@@ -602,8 +649,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(hongma2,1);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    maController(hongma2,1);
+                    //为馬统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -613,6 +660,8 @@ public class RunController implements Initializable {
 
     public void hongpao1Controller(ActionEvent event) throws Exception {
         //“红炮1”按钮处理机
+        if(runType.currentType%2==1)
+            return;
         initNext();
         currentChessMan = hongpao1;
         runType.currentChessMan = 161;
@@ -621,8 +670,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(hongpao1,1);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    paoController(hongpao1,1);
+                    //为炮统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -632,6 +681,8 @@ public class RunController implements Initializable {
 
     public void hongpao2Controller(ActionEvent event) throws Exception{
         //“红炮2”按钮处理机
+        if(runType.currentType%2==1)
+            return;
         initNext();
         currentChessMan = hongpao2;
         runType.currentChessMan = 162;
@@ -640,8 +691,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(hongpao2,1);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    paoController(hongpao2,1);
+                    //为炮统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -651,6 +702,8 @@ public class RunController implements Initializable {
 
     public void hongshuaiController(ActionEvent event) throws Exception{
         //“红帅” 按钮处理机
+        if(runType.currentType%2==1)
+            return;
         initNext();
         currentChessMan = hongshuai;
         runType.currentChessMan = 111;
@@ -659,8 +712,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(hongshuai,1);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    jiangController(hongshuai,1);
+                    //为将帅统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -670,6 +723,8 @@ public class RunController implements Initializable {
 
     public void hongshi1Controller(ActionEvent event) throws Exception{
         //“红仕1”按钮处理机
+        if(runType.currentType%2==1)
+            return;
         initNext();
         currentChessMan = hongshi1;
         runType.currentChessMan = 121;
@@ -678,8 +733,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(hongshi1,1);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    shiController(hongshi1,1);
+                    //为士统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -689,6 +744,8 @@ public class RunController implements Initializable {
 
     public void hongshi2Controller(ActionEvent event) throws Exception{
         //“红仕2”按钮处理机
+        if(runType.currentType%2==1)
+            return;
         initNext();
         currentChessMan = hongshi2;
         runType.currentChessMan = 122;
@@ -697,8 +754,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(hongshi2,1);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    shiController(hongshi2,1);
+                    //为士统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -708,6 +765,8 @@ public class RunController implements Initializable {
 
     public void hongxiang1Controller(ActionEvent event) throws Exception{
         //“红相1”按钮处理机
+        if(runType.currentType%2==1)
+            return;
         initNext();
         currentChessMan = hongxiang1;
         runType.currentChessMan = 131;
@@ -716,8 +775,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(hongxiang1,1);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    xiangController(hongxiang1,1);
+                    //为象统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -727,6 +786,8 @@ public class RunController implements Initializable {
 
     public void hongxiang2Controller(ActionEvent event) throws Exception{
         //“红相2”按钮处理机
+        if(runType.currentType%2==1)
+            return;
         initNext();
         currentChessMan = hongxiang2;
         runType.currentChessMan = 132;
@@ -735,8 +796,8 @@ public class RunController implements Initializable {
             public void run() {
                 //update ui
                 try {
-                    zuController(hongxiang2,1);
-                    //为兵卒统一处理机递对应的按钮对象名
+                    xiangController(hongxiang2,1);
+                    //为象统一处理机递对应的按钮对象名
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -755,6 +816,7 @@ public class RunController implements Initializable {
             public void run() {
                 removeChenMan(x,y);
                 moveChessMan(currentChessMan,x,y,runType.currentChessMan);
+                runType.currentType++;
                 initNext();
                 //走子并移动
             }
@@ -853,6 +915,8 @@ public class RunController implements Initializable {
         //画出所有可移动坐标
     }
 
+
+
     private void moveChessMan(Button button,double x,double y,int type){
         //走棋
         runType.allChessMan[(int) ((button.getLayoutY()-77)/50)][(int) ((button.getLayoutX()-177)/50)] = 0;
@@ -870,7 +934,9 @@ public class RunController implements Initializable {
         if(runType.allChessMan[X][Y]==0)
             return;
         switch (runType.allChessMan[X][Y]){
-            case 11:moveChessMan(heijiang,  runType.heiReady[runType.heiSum][0]*50+177,runType.heiReady[runType.heiSum][1]*50+77,-1);runType.heiSum++;break;
+            case 11:moveChessMan(heijiang,  runType.heiReady[runType.heiSum][0]*50+177,runType.heiReady[runType.heiSum][1]*50+77,-1);runType.heiSum++;
+                    ResultController.result(1);
+                    break;
             case 21:moveChessMan(heishi1,   runType.heiReady[runType.heiSum][0]*50+177,runType.heiReady[runType.heiSum][1]*50+77,-1);runType.heiSum++;break;
             case 22:moveChessMan(heishi2,   runType.heiReady[runType.heiSum][0]*50+177,runType.heiReady[runType.heiSum][1]*50+77,-1);runType.heiSum++;break;
             case 31:moveChessMan(heixiang1, runType.heiReady[runType.heiSum][0]*50+177,runType.heiReady[runType.heiSum][1]*50+77,-1);runType.heiSum++;break;
@@ -887,7 +953,9 @@ public class RunController implements Initializable {
             case 74:moveChessMan(heizu4,    runType.heiReady[runType.heiSum][0]*50+177,runType.heiReady[runType.heiSum][1]*50+77,-1);runType.heiSum++;break;
             case 75:moveChessMan(heizu5,    runType.heiReady[runType.heiSum][0]*50+177,runType.heiReady[runType.heiSum][1]*50+77,-1);runType.heiSum++;break;
 
-            case 111:moveChessMan(hongshuai, runType.hongReady[runType.hongSum][0]*50+177,runType.hongReady[runType.hongSum][1]*50+77,-1);runType.hongSum++;break;
+            case 111:moveChessMan(hongshuai, runType.hongReady[runType.hongSum][0]*50+177,runType.hongReady[runType.hongSum][1]*50+77,-1);runType.hongSum++;
+                     ResultController.result(0);
+                     break;
             case 121:moveChessMan(hongshi1,  runType.hongReady[runType.hongSum][0]*50+177,runType.hongReady[runType.hongSum][1]*50+77,-1);runType.hongSum++;break;
             case 122:moveChessMan(hongshi2,  runType.hongReady[runType.hongSum][0]*50+177,runType.hongReady[runType.hongSum][1]*50+77,-1);runType.hongSum++;break;
             case 131:moveChessMan(hongxiang1,runType.hongReady[runType.hongSum][0]*50+177,runType.hongReady[runType.hongSum][1]*50+77,-1);runType.hongSum++;break;
@@ -909,6 +977,8 @@ public class RunController implements Initializable {
 
     private void nextDraw(Queue<Double> queue) throws IOException {
         //next按钮绘制
+        if (queue.isEmpty())
+            return;
         next0.setLayoutX(queue.poll());
         next0.setLayoutY(queue.poll());
         if(queue.isEmpty())
@@ -1018,4 +1088,3 @@ public class RunController implements Initializable {
     }
 
 }
-

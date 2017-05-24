@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaSource.MainController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaSource.MainController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
   </columnConstraints>
@@ -16,12 +16,17 @@
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <AnchorPane prefHeight="1920" prefWidth="720">
          <children>
-            <Button fx:id="singleGame" layoutX="243.0" layoutY="87.0" mnemonicParsing="false" onAction="#singleGameAction" prefHeight="49.0" prefWidth="178.0" text="单人游戏" />
-            <Button fx:id="webGame" layoutX="243.0" layoutY="169.0" mnemonicParsing="false" onAction="#webGameAction" prefHeight="49.0" prefWidth="178.0" text="联机游戏" />
-            <Button fx:id="aboutGame" layoutX="243.0" layoutY="251.0" mnemonicParsing="false" onAction="#aboutGameAction" prefHeight="49.0" prefWidth="178.0" text="关于" />
-            <Button fx:id="exitGame" layoutX="243.0" layoutY="333.0" mnemonicParsing="false" onAction="#exitGameAction" prefHeight="49.0" prefWidth="178.0" text="退出" />
+            <ImageView fitHeight="720.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/beijing.jpg" />
+               </image>
+            </ImageView>
+            <Button styleClass="single" fx:id="singleGame" layoutX="100.0" layoutY="500.0" mnemonicParsing="false" onAction="#singleGameAction" prefHeight="100" prefWidth="300.0" style="-fx-background-color: transparent;" />
+            <Button styleClass="web" fx:id="webGame" layoutX="243.0" layoutY="169.0" mnemonicParsing="false" onAction="#webGameAction" prefHeight="49.0" prefWidth="178.0" text="联机游戏" />
+            <Button styleClass="about" fx:id="aboutGame" layoutX="243.0" layoutY="251.0" mnemonicParsing="false" onAction="#aboutGameAction" prefHeight="49.0" prefWidth="178.0" text="关于" />
+            <Button styleClass="exit" fx:id="exitGame" layoutX="243.0" layoutY="333.0" mnemonicParsing="false" onAction="#exitGameAction" prefHeight="49.0" prefWidth="178.0" text="退出" />
          </children>
       </AnchorPane>
    </children>
